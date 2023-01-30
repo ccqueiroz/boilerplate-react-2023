@@ -21,8 +21,9 @@
   "lint-staged": {
     "*.{ts,tsx}": [
       "prettier --write",
-      "npm run lint"
-    ]
+      "yarn run lint"
+    ],
+    "scr/**/*/{ts,tsx}": ["yarn teste"]
   },
   "browserslist": {
     "production": [
