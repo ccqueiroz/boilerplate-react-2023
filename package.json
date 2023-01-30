@@ -22,8 +22,13 @@
     "*.{ts,tsx}": [
       "prettier --write",
       "yarn run lint"
-    ],
-    "scr/**/*/{ts,tsx}": ["yarn teste"]
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "lint-staged"
+    }
   },
   "browserslist": {
     "production": [
